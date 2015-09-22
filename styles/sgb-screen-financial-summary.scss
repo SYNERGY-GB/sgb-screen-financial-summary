@@ -1,0 +1,36 @@
+//Define any sass variables and styles here.
+//They may be overridden by the application using the screen.
+
+$myColor: #00dda0;
+
+.customHeader {
+  color: $myColor;
+}
+
+ion-header-bar .title {
+ color: #3399FF;
+}
+
+.bar .bar-header .bar-positive
+{ 
+	text-align: center;
+	
+}
+
+#content{
+	top: 44px;
+	background: #CCEEFF;
+}
+
+
+#title {
+	/*background-color: #FDFDFD;*/
+	/*opacity: 0.8;*/
+	background: rgba(0,200,200,0.8);
+}
+
+#title-card{
+	/*background-color: #FDFDFD;*/
+	/*opacity: 0.8;*/
+	background: rgba(0,200,200,0.8);
+}
