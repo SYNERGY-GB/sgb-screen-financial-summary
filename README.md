@@ -35,3 +35,8 @@ Se trata de una pantalla de resumen financiero, donde muestra el monto disponibl
 
 ![Alt Text] (https://s3.amazonaws.com/megazord-framework/balsamiq+mockups/sgb-screen-financial-summary.png)
 
+<h3> Prueba de la pantalla </h3>
+Para probar la pantalla se deben ejecutar los comandos siguientes:
+npm install
+gulp serve
+
