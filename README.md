@@ -37,6 +37,6 @@ Se trata de una pantalla de resumen financiero, donde muestra el monto disponibl
 
 <h3> Prueba de la pantalla </h3>
 Para probar la pantalla se deben ejecutar los comandos siguientes:
-npm install
-gulp serve
+- npm install
+- gulp serve
 
