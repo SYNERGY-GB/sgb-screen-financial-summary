@@ -1,6 +1,6 @@
 //Screen sample data (for development purposes)
 data = {
-	"userName": "Alexander Ramírez",
+	"userName": "Alexander Ramírez M.",
 	"lastConn": "10/10/2015 16:55:34",
 	"list" : [{ 
 		"groupTitle" : "Cuentas",
