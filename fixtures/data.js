@@ -1,70 +1,53 @@
 //Screen sample data (for development purposes)
 data = {
-	"accounts" : { 
-		"title" : "Cuentas",
-	  	"data" : [
+	"userName": "Alexander Ramírez",
+	"lastConn": "10/10/2015 16:55:34",
+	"list" : [{ 
+		"groupTitle" : "Cuentas",
+	  	"groupData" : [
 		    {
-
-		    	"type" : "Cuenta Corriente",
-
-		    	"lastFour" : "5456", 
-
-		    	"amount" : 	32.568	
-
-		    },
-
-		        {
-
-		    	"type" : "Cuenta Corriente",
-
-		    	"lastFour" : "6255",
-
-		    	"amount" : 	60.698
-
-		    },
-
-		        {
-
-		    	"type" : "Cuenta Corriente",
-
-		    	"lastFour" : "8674",
-
-		    	"amount" : 61.588
-
-		    },
-
-		        {
-
-		    	"type" : "Cuenta Corriente",
-
-		    	"lastFour" : "6321",
-
-		    	"amount" : 33.987
-
+		    	"type": "CA",
+		    	"id": "1",
+		    	"name" : "Cuenta de ahorro...5456",
+		    	"currency" : "Bs", 
+		    	"amount" : 	"32.568.000,00"	
+		    },{
+		    	"type": "CA",
+		    	"id": "2",
+		    	"name" : "Cuenta de ahorro...5456",
+		    	"currency" : "Bs.", 
+		    	"amount" : 	"32.568,00"	
+		    },{
+		    	"type": "CC",
+		    	"id": "3",
+		    	"name" : "Cuenta Corriente...5456",
+		    	"currency" : "$", 
+		    	"amount" : 	"32.568,00"	
+		    },{
+		    	"type": "CC",
+		    	"id": "4",
+		    	"name" : "Cuenta Corriente...5456",
+		    	"currency" : "$", 
+		    	"amount" : 	"32.568,00"	
 	    	}
-
-		],
-	},
-	"cards" : [
-		{
-
-			"type" : "Tarjeta de Crédito",
-
-	    	"lastFour" : "8945",
-
-	    	"amount" : 21.123
-
-	    },
-
-	        {
-
-	    	"type" : "Tarjeta de Crédito",
-
-	    	"lastFour" : "5587",
-
-	    	"amount" : 99.258
-
-	    }
-	]
+		]
+	},{
+		"groupTitle" : "Tarjetas de crédito",
+	  	"groupData" : [
+		    {
+		    	"type": "TC",
+		    	"id": "5",
+		    	"name" : "Master...5456",
+		    	"currency" : "Bs", 
+		    	"amount" : 	"32.568,00"	
+		    },{
+		    	"type": "TC",
+		    	"id": "6",
+		    	"name" : "Visa...5456",
+		    	"currency" : "Bs", 
+		    	"amount" : 	"32.568,00"	
+		    }
+		]
+	}]
 };
    

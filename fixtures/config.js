@@ -1,7 +1,7 @@
 //Screen sample configuration (for development purposes)
 config = {
     "templateType": "",
-   	"showSearch": '<>',
-
-
+   	"showSearch": "<>",
+   	"language": "",
+   	"title": "Titulo"
 };

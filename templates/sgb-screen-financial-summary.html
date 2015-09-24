@@ -1,44 +1,38 @@
 <ion-view mz-screen view-title="{{ title | translate }}">
- <!--ion-header-bar align-title="center" class="bar-positive">
- <h3>Resumen Financiero</h3>
-  </ion-header-bar-->
-<div class="bar bar-header bar-positive">
- 	 <button class="button button-icon icon ion-navicon"></button>
-  		<h1 class="title">Resumen Financiero</h1>
+ 
+<div class="list card">
+	<div class="item item-divider">
+		<h4 style="text-align:right;">Bienvenido {{data.userName}}</h4>
 	</div>
-    <!--div class="bar bar-header bar-positive">
-    	<h3 class"title" style="text-align: center;"> Resumen Financiero </h3>
-    </div-->
-    <ion-content id="content"> 
+	<div class="item">
+		<h6 style="text-align:right;">Última conexión: {{data.lastConn}}</h6>
+	</div>
+</div>
 
+<div class="list">
+<div class="card" ng-repeat="group in data.list">	
+  <div class="item item-divider">
+    {{group.groupTitle}}
+  </div>
+  <a class="item item-icon-left item-icon-right" href="#" ng-repeat="groupItem in group.groupData">
+    <i ng-if="groupItem.type=='CA'" class="icon ion-cash"></i>
+    <i ng-if="groupItem.type=='CC'" class="icon ion-compose"></i>
+    <i ng-if="groupItem.type=='TC'" class="icon ion-card"></i>
 
-	  	<div class="card">
-		  	<div id="title" class="item item-text-wrap">
-		   		<b>{{data.accounts.title}}</b>
-		   	</div>
+    <div class="row">
 
-			<div class="item item-icon-left item-icon-right" ng-repeat="account in data.accounts.data">
-			  <i class="icon ion-card"></i>
-			   {{account.type}}...{{account.lastFour}} <span>&nbsp</span> {{ account.amount }}
-			   <i id="flecha" ng-click="goToAccount(account)" class="icon ion-arrow-right-b"></i>
-		  	</div>
+    <div class="col col-50">
+    	<p style="white-space:pre-wrap;">{{groupItem.name}}</p>
+	</div>
 
-	  	</div>
+	<div class="col" style="text-align:right;">
+		<h2>{{groupItem.amount}}</h2>
+		<h6 style="color:gray;">Disponible ({{groupItem.currency}})</h6>
+	</div>
 
-	  	{{_screenParams.templateType}}
-
-
-	  	<div class="card">
-		  	<div id="title-card" class="item item-text-wrap">
-		   		<b>Tarjeta de Crédito</b>
-		   	</div>
-
-			<div class="item item-icon-left item-icon-right" ng-repeat="cards in data.cards">
-			  <i class="icon ion-card"></i>
-			  	 {{cards.type}}...{{cards.lastFour}} <span>&nbsp</span> {{ cards.amount }}
-			   <i id="flecha" ng-click="goToCards(cards)" class="icon ion-arrow-right-b"></i>
-			</div>
-		</div>
-
-	</ion-content>
+	</div>
+    <i class="icon ion-chevron-right"></i>
+  </a>
+</div>
+</div>
 </ion-view>
