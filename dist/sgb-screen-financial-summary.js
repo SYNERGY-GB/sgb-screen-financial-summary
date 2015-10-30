@@ -2,10 +2,10 @@
 'use strict';
 
 angular.module('sgb-screen-financial-summary', ['megazord'])
-    .controller('sgb-screen-financial-summary-controller', ['$scope', '_router', '_screen', '_screenParams', '$stateParams', function ($scope, _router, _screen, _screenParams, $stateParams) {
+    .controller('sgb-screen-financial-summary-controller', ['$scope', '_router', '_screen', '_screenParams', '_data', function ($scope, _router, _screen, _screenParams, _data) {
         _screen.initialize($scope, _screenParams);
 
-        $scope.data = $stateParams.data;
+        $scope.data = _data;
         $scope.goToAccount = function(account){
 //Nothing to do but fire the event
 			_router.fireEvent({
